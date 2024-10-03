@@ -41,7 +41,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
 
-<title>Aurora Jewels</title> 
+<title>Aurora</title> 
 
 <style>
 
@@ -51,18 +51,38 @@ crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
 <!--NavBar Start-->
 
-<nav class="navbar"id="navbar">  
-    <div class="logo">  
-        <img src="./Assets/Images/Aurora Jewels Logo.png" alt="Your Logo" >
-    </div>  
-    <ul class="nav-links">  
-        <li><a href="#">Home</a></li>  
-        <li><a href="#">Products</a></li>  
-        <li><a href="#">Testimonials</a></li>  
-        <li><a href="#">About Us</a></li>  
-        <li><a href="#">Contact Us</a></li>  
-        <li><a href="#">Cart</a></li>  
-    </ul>  
+<nav class="navbar navbar-expand-lg navbar-light nav-bar" style="height: 13vh;" id="home"> 
+  <div class="container-fluid navbar-contents px-md-3">
+    <a class="navbar-brand nav-logo">
+      <img src="./Assets/Images/Aurora-logo.png" alt="logo" height="100px" width="100px">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#about">ABOUT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#gallery">PRODUCT</a>
+        </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#gallery">GALLERY</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#contact">CONTACT</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#contact">CART</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </nav>
 
 <!--NavBar End-->
@@ -86,7 +106,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
 <!--About Start-->
 
-<section class="bg-gray-100 pt-4 b" style="background-color: rgba(216, 220, 179, 0.358);">
+<section class="bg-gray-100 pt-4 b" style="background-color: rgba(216, 220, 179, 0.358); overflow: hidden;">
     <div class="relative pt-5 w-full h-[50vh]">
         <div class="absolute inset-0 flex justify-center items-center ml-80 p-2" >
             <h1 class="text-dark text-center text-5xl font-extrabold shadow-lg drop-shadow-md">
@@ -96,12 +116,6 @@ crossorigin="anonymous" referrerpolicy="no-referrer"/>
     </div>
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-5">   
         <div class="grid grid-rows-2 gap-4 h-[800px]">
-            <div class="bg-blue-500 h-[400px]  w-[400px] ml-10 ">
-                <!-- <img src="./Assets/Images/about7.jpg" alt="" class="w-full h-full bg-cover"> -->
-            </div>
-            <div class="bg-blue-400 h-[400px]  w-[400px] ml-10">
-                <!-- <img src="./Assets/Images/about6.jpg" alt="" class="w-full h-full bg-cover"> -->
-            </div>
         </div>
         <div class="bg-gray-100 p-8 mt-10  bg-transparent"  >
             <h1 class="text-center text-4xl font-bold text-black mb-4 mt-20"> HEY WELCOME! </h1>
@@ -688,7 +702,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
 <!--Partner Start-->
 
-<div class="container" style="border-color: black;border-width: 2px;display: flex;flex-direction: column;align-items: center;background-color: rgba(216, 220, 179, 0.358);margin:90px;padding: 20px;height: auto;">
+<div class="container" style="border-color: black;border-width: 2px;display: flex;flex-direction: column;align-items: center;background-color: rgba(216, 220, 179, 0.358);padding: 20px;height: auto;">
     <div> <h1 class="partners-h">Our Partners</h1></div>
     <div class="logos-info">
         <div class="info" >
@@ -715,7 +729,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"/>
 <footer class="footer-div">
     <div class="container">
         <div class="footer-content">
-            <h3>Usefull Links</h3>
+            <h3 class="text-center">Usefull Links</h3>
             <ul class="list">
                 <li ><a href="">Delivery Information </a></li>
                 <li><a href="">International Shippings</a></li>
@@ -728,7 +742,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer"/>
             </ul>
         </div>
         <div class="footer-content">
-            <h3>Informations</h3>
+            <h3 class="text-center">Informations</h3>
             <ul class="list">
                 <li ><a href="">Careers</a></li>
                 <li><a href="">Blog</a></li>
